@@ -66,8 +66,8 @@ p {
     box-sizing: border-box;
     display: grid;
     place-content: center;
-    grid-template-columns: 13.2em 13.2em 13.2em;
-    grid-template-rows: 22em;
+    grid-template-columns: 13em 13em 13em;
+    grid-template-rows: 21em;
 }
 
 .sedans {
@@ -90,6 +90,7 @@ p {
 }
 
 .icon {
+    width: 40px;
     box-sizing: border-box;
     margin: 1.8em;
 }
