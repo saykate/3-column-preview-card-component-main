@@ -50,49 +50,62 @@ h2 {
     font-family: var(--ff-header);
     text-align: left;
     text-transform: uppercase;
-    font-size: 1.7em;
-    margin: 1em;
+    font-size: 1.7rem;
+    margin: .8rem 2rem;
 }
 
 p {
     color: var(--clr-neutral-trans);
     font-family: var(--ff-main);
-    font-size: .65em;
+    font-size: .65rem;
     text-align: left;
-    margin: 2.5em 3em 2.5em 3em;
+    margin: 1.2rem 2rem 1.2rem 1.3rem;
 }
 
 .box {
     box-sizing: border-box;
     display: grid;
-    place-content: center;
-    grid-template-columns: 13em 13em 13em;
-    grid-template-rows: 21em;
+    max-width: 40rem;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three';
+    margin: auto;
+}
+
+@media (min-width: 30em) {
+    .box {
+        grid-template-areas: 
+        'one two three';
+    }
 }
 
 .sedans {
     box-sizing: border-box;
     background-color: var(--clr-primary-ora);
-    border-top-left-radius: .3em;
-    border-bottom-left-radius: .3em;
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+    grid-template-areas: one;
 }
 
 .suvs {
     box-sizing: border-box;
     background-color: var(--clr-primary-cyan);
+    grid-template-areas: two;
 }
 
 .luxury {
     box-sizing: border-box;   
     background-color: var(--clr-primary-dark);
-    border-top-right-radius: .3em;
-    border-bottom-right-radius: .3em;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    grid-template-areas: three;
 }
 
 .icon {
     width: 40px;
     box-sizing: border-box;
-    margin: 1.8em;
+    margin: 2rem 2rem 1.5rem 2rem;
 }
 
 button {
@@ -101,7 +114,7 @@ button {
     border-radius: 1.8em;
     font-family: var(--ff-main);
     font-size: .6em;
-    margin: 2em 3em 1em 2.3em;
+    margin: 2.3rem 3rem 2.2rem 1.8rem;
     padding: .7em 2.2em;
     cursor: pointer;
 }
@@ -135,8 +148,3 @@ button:hover {
     background-color: var(--clr-primary-ora);
 }
 
-@media () {
-    .box {
-        
-    }
-}
