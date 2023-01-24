@@ -1,0 +1,141 @@
+/* reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+input, button, textarea, select {
+    font: inherit;
+  }
+p, h1, h2, h3, h4, h5, h6 {
+
+    overflow-wrap: break-word;
+  }
+h1, h2, h3 {
+    line-height: 1;
+}
+
+/* Page Styling */
+
+:root {
+    --clr-primary-ora: hsl(31, 77%, 52%);
+    --clr-primary-cyan: hsl(184, 100%, 22%);
+    --clr-primary-dark: hsl(179, 100%, 13%); 
+    --clr-neutral-trans: hsla(0, 0%, 100%, 0.75);
+    --clr-neutral-grey: hsl(0, 0%, 95%);
+    --ff-main: 'Lexend Deca', serif;
+    --ff-header: 'Big Shoulders Display', serif
+}
+
+body {
+    margin: 3rem;
+    padding: 0;
+}
+
+h2 {
+    color: var(--clr-neutral-grey);
+    font-family: var(--ff-header);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    margin: 1em;
+}
+
+p {
+    color: var(--clr-neutral-trans);
+    font-family: var(--ff-main);
+    font-size: .65em;
+    text-align: left;
+    margin: 2.5em 3em 2.5em 3em;
+}
+
+.box {
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 13.2em 13.2em 13.2em;
+    grid-template-rows: 22em;
+}
+
+.sedans {
+    box-sizing: border-box;
+    background-color: var(--clr-primary-ora);
+    border-top-left-radius: .3em;
+    border-bottom-left-radius: .3em;
+}
+
+.suvs {
+    box-sizing: border-box;
+    background-color: var(--clr-primary-cyan);
+}
+
+.luxury {
+    box-sizing: border-box;   
+    background-color: var(--clr-primary-dark);
+    border-top-right-radius: .3em;
+    border-bottom-right-radius: .3em;
+}
+
+.icon {
+    box-sizing: border-box;
+    margin: 1.8em;
+}
+
+button {
+    background-color: var(--clr-neutral-grey);
+    border-color: transparent;
+    border-radius: 1.8em;
+    font-family: var(--ff-main);
+    font-size: .6em;
+    margin: 2em 3em 1em 2.3em;
+    padding: .7em 2.2em;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--clr-neutral-grey);
+    border-color: var(--clr-neutral-grey);
+}
+
+.luxury-button {
+    color: var(--clr-primary-dark);
+}
+
+.luxury-button:hover {
+    background-color: var(--clr-primary-dark);
+}
+
+.suv-button {
+    color: var(--clr-primary-cyan);
+}
+
+.suv-button:hover {
+    background-color: var(--clr-primary-cyan);
+}
+
+.sedan-button {
+    color: var(--clr-primary-ora);
+}
+
+.sedan-button:hover {
+    background-color: var(--clr-primary-ora);
+}
+
+@media () {
+    .box {
+        
+    }
+}
